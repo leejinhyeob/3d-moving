@@ -1,0 +1,29 @@
+class sp{
+void me(){
+  float r = 200;  
+  fill(255,0,0);
+  noStroke();
+  translate(r*cos(radians(i)),r*sin(radians(i)),0.);
+  sphere(20);
+  translate(-r*cos(radians(i)),-r*sin(radians(i)),0.);
+ }
+ void move(){
+   i+=1;
+   if(i==361) i=0;
+ }
+}
+
+class sp2{
+void me(){
+  float r = 200;  
+  fill(0,0,255);
+  noStroke();
+  translate(r*cos(radians(i+180)),r*sin(radians(i+180)),0.);
+  sphere(20);
+  translate(-r*cos(radians(i+180)),-r*sin(radians(i+180)),0.);
+ }
+ void move(){
+   i+=1;
+   if(i==361) i=0;
+ }
+}
